@@ -1,0 +1,23 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr, auto, auto, 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1em;
+}
+#knop {
+  grid-column: 2/3;
+}
+.vlakje {
+  grid-column: 3/4;
+  background-color: red;
+  width: 5em;
+  height: 5em;
+  transition: 0.5s cubic-bezier(0.4, -0.52, 0.65, 1.4);
+  opacity: 1.0;
+}
+.vlakje--schuif-uit {
+  transform: translateX(50vw);
+  opacity: 0.0;
+}
